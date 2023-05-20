@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    min-width: 100vh;
+    width:100% ;
+    background:url(background.jpg);
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding-bottom: 40px;
+    max-width: 100%;
+    background:url(bg2.png) ;
+    border-radius:7px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3) ;
+}   
+.container .registration{
+    display: none;
+}
+#check:checked ~ .registration{
+    display: block;
+}
+#check:checked ~ .login{
+    display: none;
+}
+#check{
+    display: none;
+}
+.container .form{
+    padding: 2.3rem ;
+}
+.form header{
+    font-size:2rem ;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.form input{
+    height: 60px;
+    width: 100%;
+    padding: 0 15px;
+    font-size: 17px;
+    margin-bottom: 1.3rem;
+    border:1px solid #ddd ;
+    border-radius: 6px;
+    outline: none;
+}
+.form input:focus{
+    box-shadow: 0 1px 0  rgba(0,0,0,0.2);
+}
+.form a{
+    font-size: 16px ;
+    color: #d9fff7;
+    text-decoration: none;
+}
+.form a:hover{
+    text-decoration: underline;
+}
+
+.form input.button{
+    color: #000000;
+    background: #2be9c3;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top:1.7rem;
+    cursor:pointer;
+
+}
+form input.button:hover{
+ background-color: #009576;   
+}
+.signup{
+    font-size: 17px;
+    text-align: center;
+    color: #f9f5f5;
+
+}
+.signup label{
+    color:#7fafa4;
+    cursor: pointer;
+}
+.signup label:hover{
+    text-decoration: underline;
+}
